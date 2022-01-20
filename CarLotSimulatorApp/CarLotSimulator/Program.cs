@@ -30,25 +30,18 @@ namespace CarLotSimulator
             var newCar = new Car(2010, "Nissan", "Santra", "Quiet", true);
             CarLot.CarList.Add(newCar);
 
-            myCar.MakeEngineNoise();
-            myCar.MakeHonkNoise();
-            Console.WriteLine();
-            theirCar.MakeEngineNoise();
-            theirCar.MakeHonkNoise();
-            Console.WriteLine();
-            newCar.MakeEngineNoise();
-            newCar.MakeHonkNoise();
-
             //*************BONUS*************//
 
             // Set the properties utilizing the 3 different ways we learned about, one way for each car
 
             //*************BONUS X 2*************//
 
-            Console.WriteLine();
             foreach (var c in CarLot.CarList)
             {
                 Console.WriteLine($"{c.Year} {c.Make} {c.Model}");
+                c.MakeEngineNoise();
+                c.MakeHonkNoise();
+                Console.WriteLine();
             }
 
 
