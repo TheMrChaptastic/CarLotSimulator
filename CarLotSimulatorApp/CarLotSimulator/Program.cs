@@ -24,14 +24,14 @@ namespace CarLotSimulator
             var newCar = new Car(2010, "Nissan", "Santra", "Quiet", true);
             CarLot.CarList.Add(newCar);
 
-            myCar.MakeEngineNoise(myCar.EngineNoise);
-            myCar.MakeHonkNoise(myCar.EngineNoise);
+            myCar.MakeEngineNoise();
+            myCar.MakeHonkNoise();
             Console.WriteLine();
-            theirCar.MakeEngineNoise(theirCar.EngineNoise);
-            theirCar.MakeHonkNoise(theirCar.EngineNoise);
+            theirCar.MakeEngineNoise();
+            theirCar.MakeHonkNoise();
             Console.WriteLine();
-            newCar.MakeEngineNoise(newCar.EngineNoise);
-            newCar.MakeHonkNoise(newCar.EngineNoise);
+            newCar.MakeEngineNoise();
+            newCar.MakeHonkNoise();
 
             //*************BONUS*************//
 

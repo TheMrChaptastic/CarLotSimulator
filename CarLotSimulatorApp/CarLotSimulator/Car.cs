@@ -30,9 +30,9 @@ namespace CarLotSimulator
         public string EngineNoise { get; set; }
         public bool IsDrivable { get; set; }
 
-        public void MakeEngineNoise(string nLevel)
+        public void MakeEngineNoise()
         {
-            if (nLevel == "Loud")
+            if (this.EngineNoise == "Loud")
             {
                 Console.WriteLine("VROOM VROOM!");
             }
@@ -42,9 +42,9 @@ namespace CarLotSimulator
             }
         }
 
-        public void MakeHonkNoise(string nLevel)
+        public void MakeHonkNoise()
         {
-            if (nLevel == "Loud")
+            if (this.EngineNoise == "Loud")
             {
                 Console.WriteLine("HOOONK HOOONK!");
             }
