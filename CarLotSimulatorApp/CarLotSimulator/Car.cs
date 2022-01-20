@@ -8,11 +8,6 @@ namespace CarLotSimulator
     {
         public Car()
         {
-            Year = 2010;
-            Make = "Hyundai";
-            Model = "Elantra";
-            EngineNoise = "Quiet";
-            IsDrivable = true;
         }
 
         public Car(int year, string make, string model, string noise, bool driveable)

@@ -18,6 +18,12 @@ namespace CarLotSimulator
             //Set the properties for each of the cars
             //Call each of the methods for each car
             var myCar = new Car();
+            myCar.Year = 2012;
+            myCar.Make = "Hyundai";
+            myCar.Model = "Cool Car";
+            myCar.EngineNoise = "Loud";
+            myCar.IsDrivable = true;
+
             CarLot.CarList.Add(myCar);
             var theirCar = new Car() { Year = 1997, Make = "Ford", Model = "F-150", EngineNoise = "Loud", IsDrivable = false };
             CarLot.CarList.Add(theirCar);
