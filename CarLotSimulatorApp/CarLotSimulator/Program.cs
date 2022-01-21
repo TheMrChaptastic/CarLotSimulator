@@ -36,14 +36,7 @@ namespace CarLotSimulator
 
             //*************BONUS X 2*************//
 
-            foreach (var c in CarLot.CarList)
-            {
-                Console.WriteLine($"{c.Year} {c.Make} {c.Model}");
-                c.MakeEngineNoise();
-                c.MakeHonkNoise();
-                Console.WriteLine();
-            }
-
+            CarLot.ShowCars();
 
             //Create a CarLot class
             //It should have at least one property: a List of cars
